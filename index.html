@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Crypto Dashboard</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+<!-- 
+        <header>
+            <h1>Crypto Dashboard</h1>
+            <p>Track the top 10 cryptocurrencies by market cap</p>
+        </header> -->
+
+
+        <div class="controls">
+
+            <div class="search-container">
+
+                <input
+                    type="text"
+                    id="searchInput"
+                    placeholder="Search by name or symbol..."
+                >
+
+                <button id="searchButton">
+                    Search
+                </button>
+
+            </div>
+
+
+            <div class="sort-container">
+
+                <button id="marketCapButton">
+                    Sort by Market Cap
+                </button>
+
+                <button id="percentageButton">
+                    Sort by % Change
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <div class="table-container">
+
+            <table>
+
+                <thead>
+
+                    <tr>
+                        <th>Rank</th>
+                        <th>Coin</th>
+                        <th>Symbol</th>
+                        <th>Price</th>
+                        <th>24h Change</th>
+                        <th>Market Cap</th>
+                        <th>Total Volume</th>
+                    </tr>
+
+                </thead>
+
+
+                <tbody id="cryptoTableBody">
+
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
